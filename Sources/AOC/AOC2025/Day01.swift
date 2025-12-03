@@ -7,7 +7,7 @@ public class Day01 {
         var part2 = 0
         for line in lines {
             let direction = line.prefix(1)
-            let steps = Int(line.suffix(from: line.index(line.startIndex, offsetBy: 1)))!
+            let steps = Int(line.suffix(from: line.index(1)))!
 
             for _ in 0..<steps {
                 if direction == "L" {
