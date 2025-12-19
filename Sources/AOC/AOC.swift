@@ -18,7 +18,7 @@ struct AOC {
     }
 
     static func main() {
-        let dayClass = Day08.self
+        let dayClass = Day09.self
         let input = readFile(pathForDay(dayClass: dayClass, suffix: "input"), createIfNotFound: true)
 
         let lines = input.replacingOccurrences(of: "\r", with: "").split(omittingEmptySubsequences: false){ $0.isNewline }.map { String($0) }
